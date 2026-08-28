@@ -6,8 +6,251 @@
 
     <title>Universal Auto Sales & Repair | Holyoke, MA</title>
 
-    <meta name="description" content="Universal Auto Sales & Repair in Holyoke, Massachusetts. Automotive repair, maintenance, diagnostics, and used vehicles.">
+    <meta name="description" content="Universal Auto Sales & Repair in Holyoke, Massachusetts. Automotive repair, diagnostics, maintenance, and used vehicles.">
 
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #151515;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111111;
+            color: white;
+            padding: 20px;
+        }
+
+        .top-bar {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .languages {
+            display: flex;
+            gap: 10px;
+        }
+
+        .languages a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 20px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #1c1c1c;
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 22px;
+            background: white;
+            color: #111111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .button.dark {
+            background: #111111;
+            color: white;
+            border: 2px solid white;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin-bottom: 15px;
+        }
+
+        .choices {
+            background: #eeeeee;
+            max-width: none;
+        }
+
+        .choices-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .choice-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .choice-card {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            border: 1px solid #dddddd;
+        }
+
+        .choice-card h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .choice-card p {
+            margin-bottom: 25px;
+        }
+
+        .services {
+            background: white;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .service-item {
+            background: #f1f1f1;
+            padding: 18px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .vehicles {
+            background: #eeeeee;
+            max-width: none;
+        }
+
+        .vehicles-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .vehicle-message {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .contact {
+            background: white;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #111111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero {
+                padding: 65px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .choice-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -16,242 +259,237 @@
 
     <header>
 
-        <h1>UNIVERSAL AUTO SALES & REPAIR</h1>
+        <div class="top-bar">
 
-        <p>Automotive Sales & Repair in Holyoke, Massachusetts</p>
+            <div class="logo">
+                UNIVERSAL AUTO SALES & REPAIR
+            </div>
 
-        <a href="tel:4133319610">CALL US</a>
+            <div class="languages">
+                <a href="#">🇺🇸 English</a>
+                <a href="#">🇵🇷 Español</a>
+            </div>
 
-        <a href="#appointment">REQUEST AN APPOINTMENT</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="repair.html">Auto Repair</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
     </header>
 
 
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <h1>UNIVERSAL AUTO SALES & REPAIR</h1>
+
+        <p>
+            Automotive Sales & Repair in Holyoke, Massachusetts
+        </p>
+
+        <div class="buttons">
+
+            <a class="button" href="repair.html">
+                REQUEST REPAIR / DIAGNOSTIC
+            </a>
+
+            <a class="button dark" href="viewing.html">
+                REQUEST CAR VIEWING
+            </a>
+
+        </div>
+
+    </div>
+
+
     <!-- ABOUT -->
 
-    <section>
+    <section class="about">
 
-        <h2>WELCOME TO UNIVERSAL AUTO SALES & REPAIR</h2>
+        <h2>ABOUT UNIVERSAL</h2>
 
         <p>
-            Your local automotive sales and repair business in Holyoke, Massachusetts.
-            We provide automotive repair and maintenance services while also offering
-            used vehicles for sale.
+            Universal Auto Sales & Repair is a local automotive business
+            serving drivers in Holyoke, Massachusetts and the surrounding area.
         </p>
 
         <p>
-            Whether your vehicle needs routine maintenance, diagnostics,
-            mechanical repairs, or you're looking for a used vehicle,
-            Universal Auto Sales & Repair is here to help.
+            We provide automotive repair, maintenance and diagnostic services
+            while also offering used vehicles for sale.
         </p>
+
+        <p>
+            Whether you need your vehicle diagnosed, repaired, maintained,
+            or you're interested in viewing a vehicle for sale, we're here
+            to help.
+        </p>
+
+    </section>
+
+
+    <!-- CUSTOMER CHOICES -->
+
+    <section class="choices">
+
+        <div class="choices-container">
+
+            <h2>HOW CAN WE HELP?</h2>
+
+            <div class="choice-grid">
+
+                <div class="choice-card">
+
+                    <h3>🔧 AUTO REPAIR & DIAGNOSTICS</h3>
+
+                    <p>
+                        Need your vehicle checked, diagnosed, maintained,
+                        or repaired?
+                    </p>
+
+                    <a class="button" href="repair.html">
+                        REQUEST AN APPOINTMENT
+                    </a>
+
+                </div>
+
+
+                <div class="choice-card">
+
+                    <h3>🚘 VEHICLE VIEWING</h3>
+
+                    <p>
+                        Interested in one of our available vehicles?
+                        Request an appointment to come take a look.
+                    </p>
+
+                    <a class="button" href="viewing.html">
+                        REQUEST A VIEWING
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
     <!-- SERVICES -->
 
-    <section>
+    <section class="services">
 
         <h2>AUTOMOTIVE SERVICES</h2>
 
         <p>
             Our automotive services include general maintenance,
-            diagnostics, and mechanical repairs.
+            diagnostics and mechanical repairs.
         </p>
 
-        <ul>
+        <div class="service-list">
 
-            <li>Brake Repair</li>
+            <div class="service-item">Brake Repair</div>
 
-            <li>Engine Repair</li>
+            <div class="service-item">Engine Repair</div>
 
-            <li>Transmission Service & Repair</li>
+            <div class="service-item">Transmission Service & Repair</div>
 
-            <li>Oil Changes</li>
+            <div class="service-item">Oil Changes</div>
 
-            <li>Engine Diagnostics</li>
+            <div class="service-item">Engine Diagnostics</div>
 
-            <li>A/C Service</li>
+            <div class="service-item">A/C Service</div>
 
-            <li>Battery & Electrical Service</li>
+            <div class="service-item">Battery & Electrical</div>
 
-            <li>Suspension & Steering</li>
+            <div class="service-item">Suspension & Steering</div>
 
-            <li>Exhaust Repair</li>
+            <div class="service-item">Exhaust Repair</div>
 
-            <li>Check Engine Light Diagnostics</li>
+            <div class="service-item">Check Engine Light</div>
 
-            <li>Preventive Maintenance</li>
+            <div class="service-item">Preventive Maintenance</div>
 
-            <li>General Automotive Repair</li>
+            <div class="service-item">General Automotive Repair</div>
 
-        </ul>
+        </div>
 
     </section>
 
 
-    <!-- USED VEHICLES -->
+    <!-- VEHICLES -->
 
-    <section>
+    <section class="vehicles">
 
-        <h2>USED VEHICLES</h2>
+        <div class="vehicles-container">
 
-        <p>
-            Looking for your next vehicle?
-            Check out our available used vehicles or contact us
-            to learn more about what's currently available.
-        </p>
+            <h2>VEHICLES FOR SALE</h2>
 
-        <a href="#contact">ASK ABOUT AVAILABLE VEHICLES</a>
+            <p>
+                Looking for your next vehicle?
+                Check out our current inventory.
+            </p>
 
-    </section>
+            <div class="vehicle-message">
 
+                <h3>No vehicles currently listed.</h3>
 
-    <!-- APPOINTMENT -->
+                <p>
+                    Check back soon or contact Universal Auto Sales & Repair
+                    for current vehicle availability.
+                </p>
 
-    <section id="appointment">
+                <br>
 
-        <h2>REQUEST AN APPOINTMENT</h2>
+                <a class="button" href="vehicles.html">
+                    VIEW VEHICLES
+                </a>
 
-        <p>
-            Tell us about your vehicle and what you would like us to look at.
-            Your requested date and time are not guaranteed until confirmed by
-            Universal Auto Sales & Repair.
-        </p>
+            </div>
 
-
-        <form>
-
-            <h3>YOUR INFORMATION</h3>
-
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-
-
-            <h3>YOUR VEHICLE</h3>
-
-            <label for="year">Year</label>
-            <input type="text" id="year" name="year" required>
-
-
-            <label for="make">Make</label>
-            <input type="text" id="make" name="make" required>
-
-
-            <label for="model">Model</label>
-            <input type="text" id="model" name="model" required>
-
-
-            <label for="submodel">Submodel / Trim</label>
-            <input type="text" id="submodel" name="submodel">
-
-
-            <label for="mileage">Mileage</label>
-            <input type="text" id="mileage" name="mileage">
-
-
-            <h3>APPOINTMENT DETAILS</h3>
-
-            <label for="service">What do you need?</label>
-
-            <select id="service" name="service">
-
-                <option value="">Select a service</option>
-
-                <option>Brake Repair</option>
-
-                <option>Engine Repair</option>
-
-                <option>Transmission Service & Repair</option>
-
-                <option>Oil Change</option>
-
-                <option>Engine Diagnostics</option>
-
-                <option>A/C Service</option>
-
-                <option>Battery & Electrical</option>
-
-                <option>Suspension & Steering</option>
-
-                <option>Exhaust Repair</option>
-
-                <option>Check Engine Light</option>
-
-                <option>General Repair</option>
-
-                <option>Other</option>
-
-            </select>
-
-
-            <label for="date">Preferred Date</label>
-            <input type="date" id="date" name="date" required>
-
-
-            <label for="time">Preferred Time</label>
-            <input type="time" id="time" name="time">
-
-
-            <label for="problem">Tell us what's wrong or what you would like us to look at</label>
-
-            <textarea
-                id="problem"
-                name="problem"
-                rows="6"
-                placeholder="Briefly describe the problem or service you are requesting..."
-            ></textarea>
-
-
-            <button type="submit">
-                SUBMIT APPOINTMENT REQUEST
-            </button>
-
-        </form>
-
-    </section>
-
-
-    <!-- HOURS -->
-
-    <section>
-
-        <h2>BUSINESS HOURS</h2>
-
-        <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
-
-        <p>Saturday: Closed</p>
-
-        <p>Sunday: Closed</p>
+        </div>
 
     </section>
 
 
     <!-- CONTACT -->
 
-    <section id="contact">
+    <section class="contact">
 
-        <h2>CONTACT UNIVERSAL AUTO SALES & REPAIR</h2>
+        <h2>VISIT UNIVERSAL</h2>
 
-        <p>
-            829 Main St<br>
-            Holyoke, MA 01040
-        </p>
+        <div class="contact-info">
 
-        <p>
-            Phone:
-            <a href="tel:4133319610">(413) 331-9610</a>
-        </p>
+            <p>
+                <strong>829 Main St</strong>
+            </p>
 
-        <a href="tel:4133319610">CALL NOW</a>
+            <p>
+                Holyoke, MA 01040
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:4133319610">(413) 331-9610</a>
+            </p>
+
+            <p>
+                <strong>Hours:</strong>
+                Monday – Friday, 9:00 AM – 6:00 PM
+            </p>
+
+        </div>
+
+        <br>
+
+        <a class="button" href="contact.html">
+            CONTACT US
+        </a>
 
     </section>
 
