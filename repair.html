@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request an Appointment | Universal Auto Sales & Repair</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #111;
+            line-height: 1.5;
+        }
+
+        header {
+            background: #080808;
+            color: white;
+            padding: 20px;
+            border-bottom: 5px solid #d60000;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: .5px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .page-title {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: #ddd;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .form-card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-top: 5px solid #d60000;
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+        }
+
+        .form-card h2 {
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .required {
+            color: #d60000;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 16px;
+            background: white;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .notice {
+            background: #eeeeee;
+            border-left: 5px solid #d60000;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .submit-section {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .submit-button {
+            width: 100%;
+            max-width: 500px;
+            padding: 17px;
+            border: none;
+            border-radius: 7px;
+            background: #d60000;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #aa0000;
+        }
+
+        footer {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 5px solid #d60000;
+        }
+
+        @media (max-width: 650px) {
+
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+
+            .form-card {
+                padding: 22px;
+            }
+
+            .page-title h1 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                UNIVERSAL AUTO SALES & REPAIR
+            </div>
+
+            <a class="back" href="index.html">
+                ← Back to Universal
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-title">
+
+        <h1>REQUEST A REPAIR / DIAGNOSTIC APPOINTMENT</h1>
+
+        <p>
+            Tell us about yourself, your vehicle, and the service you are looking for.
+        </p>
+
+    </div>
+
+
+    <main class="form-container">
+
+        <div class="notice">
+
+            <strong>Please note:</strong>
+
+            Your requested date and time are not guaranteed.
+            Universal Auto Sales & Repair will review your request
+            and contact you with available appointment times for confirmation.
+
+        </div>
+
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <div class="form-card">
+
+            <h2>1. YOUR INFORMATION</h2>
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="two-columns">
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(555) 555-5555"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VEHICLE INFORMATION -->
+
+        <div class="form-card">
+
+            <h2>2. YOUR VEHICLE</h2>
+
+            <div class="two-columns">
+
+                <div class="form-group">
+
+                    <label for="year">
+                        Year <span class="required">*</span>
+                    </label>
+
+                    <select id="year" name="year" required>
+
+                        <option value="">Select year</option>
+
+                        <option>2026</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="make">
+                        Make <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="make"
+                        name="make"
+                        placeholder="Toyota, Honda, Ford..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="model">
+                        Model <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="model"
+                        name="model"
+                        placeholder="Camry, Civic, F-150..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="submodel">
+                        Submodel / Trim
+                    </label>
+
+                    <input
+                        type="text"
+                        id="submodel"
+                        name="submodel"
+                        placeholder="LX, EX, Sport, Limited..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="mileage">
+                    Current Mileage
+                </label>
+
+                <input
+                    type="number"
+                    id="mileage"
+                    name="mileage"
+                    placeholder="Example: 125000"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE -->
+
+        <div class="form-card">
+
+            <h2>3. WHAT DO YOU NEED?</h2>
+
+
+            <div class="form-group">
+
+                <label for="appointment-type">
+                    Appointment Type <span class="required">*</span>
+                </label>
+
+                <select
+                    id="appointment-type"
+                    name="appointment-type"
+                    required
+                >
+
+                    <option value="">
+                        Scroll to select
+                    </option>
+
+                    <option>Diagnosis</option>
+                    <option>Repair</option>
+                    <option>Maintenance</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="service">
+                    Service Needed <span class="required">*</span>
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required
+                >
+
+                    <option value="">
+                        Scroll to select
+                    </option>
+
+                    <option>Brakes</option>
+                    <option>Engine</option>
+                    <option>Transmission</option>
+                    <option>Oil Change</option>
+                    <option>Engine Diagnostics</option>
+                    <option>A/C Service</option>
+                    <option>Battery & Electrical</option>
+                    <option>Suspension & Steering</option>
+                    <option>Exhaust</option>
+                    <option>Check Engine Light</option>
+                    <option>General Automotive Repair</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Tell Us More
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Briefly explain what's wrong with your vehicle, what you would like done, or anything else you would like the shop to know."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!-- APPOINTMENT PREFERENCE -->
+
+        <div class="form-card">
+
+            <h2>4. PREFERRED APPOINTMENT</h2>
+
+            <div class="two-columns">
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Preferred Date <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="time">
+                        Preferred Time <span class="required">*</span>
+                    </label>
+
+                    <select id="time" name="time" required>
+
+                        <option value="">
+                            Select preferred time
+                        </option>
+
+                        <option>9:00 AM</option>
+                        <option>9:30 AM</option>
+                        <option>10:00 AM</option>
+                        <option>10:30 AM</option>
+                        <option>11:00 AM</option>
+                        <option>11:30 AM</option>
+                        <option>12:00 PM</option>
+                        <option>12:30 PM</option>
+                        <option>1:00 PM</option>
+                        <option>1:30 PM</option>
+                        <option>2:00 PM</option>
+                        <option>2:30 PM</option>
+                        <option>3:00 PM</option>
+                        <option>3:30 PM</option>
+                        <option>4:00 PM</option>
+                        <option>4:30 PM</option>
+                        <option>5:00 PM</option>
+                        <option>5:30 PM</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <div class="submit-section">
+
+            <button
+                type="button"
+                class="submit-button"
+            >
+                REQUEST APPOINTMENT
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Universal Auto Sales & Repair
+        </p>
+
+        <p>
+            829 Main St, Holyoke, MA 01040
+        </p>
+
+        <p>
+            Monday – Friday | 9:00 AM – 6:00 PM
+        </p>
+
+    </footer>
+
+</body>
+</html>
